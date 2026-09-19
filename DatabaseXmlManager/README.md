@@ -13,4 +13,12 @@ Home for `DatabaseXmlManager.sln`, a Windows desktop application built with C# a
 
 Use Microsoft libraries and APIs only unless third-party dependencies are explicitly approved.
 
-The solution and project files will be added here as implementation begins.
+## Solution structure
+
+- `DatabaseXmlManager.App` — WPF shell, MVVM view models, and dependency-injection composition root.
+- `DatabaseXmlManager.Core` — domain models, contracts, environment state, and application-independent logic.
+- `DatabaseXmlManager.SqlServer` — SQL Server connection factory and repository implementations.
+- `DatabaseXmlManager.Xml` — XML reading and writing through LINQ to XML.
+- `DatabaseXmlManager.Tests` — MSTest coverage for the core and XML layers.
+
+Open `DatabaseXmlManager.sln` with Visual Studio 2026 and replace the placeholder server and database names in `src/DatabaseXmlManager.App/appsettings.json`. PROD and BCP writes default to disabled.

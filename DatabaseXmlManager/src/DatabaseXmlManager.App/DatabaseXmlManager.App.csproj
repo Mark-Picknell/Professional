@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net10.0-windows</TargetFramework><UseWPF>true</UseWPF></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseXmlManager.Core\DatabaseXmlManager.Core.csproj" />
+    <ProjectReference Include="..\DatabaseXmlManager.SqlServer\DatabaseXmlManager.SqlServer.csproj" />
+    <ProjectReference Include="..\DatabaseXmlManager.Xml\DatabaseXmlManager.Xml.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+  </ItemGroup>
+  <ItemGroup><None Update="appsettings.json"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></None></ItemGroup>
+</Project>
